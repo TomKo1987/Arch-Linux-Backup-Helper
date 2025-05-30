@@ -37,6 +37,20 @@ Under **Installer Operations** you can specify how you would like to proceed. Ea
 - **Additional Packages** provides access to the Arch User Repository. Therefore **yay** must and will be installed.
 - You can also define **Specific Packages**. These packages will be installed (using `sudo pacman -S`) only if the corresponding session has been recognized. Both full desktop environments and window managers such as “Hyprland” and others are supported.
 
+![Screenshot](https://github.com/TomKo1987/Arch-Linux-Backup-Helper/raw/main/Main.png)
+
+![Backup/Restore](https://github.com/TomKo1987/Arch-Linux-Backup-Helper/raw/main/Restore.png)
+
+![Settings](https://github.com/TomKo1987/Arch-Linux-Backup-Helper/raw/main/Settings.png)
+
+![Essential Packages](Essential%20Packages.png)
+
+![Package Installer](Package%20Installer.png)
+
+![Package Installer Dialog](Package%20Installer%20Dialog.png)
+
+![Copy File Dialog](https://github.com/TomKo1987/Arch-Linux-Backup-Helper/blob/main/Copy%20File%20Dialog.png?raw=true)
+
 ## Installation
 
 1. **Clone the repository:**
