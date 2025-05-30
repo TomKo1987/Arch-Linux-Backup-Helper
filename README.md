@@ -1,6 +1,8 @@
 # Backup Helper
 
-Backup Helper is a graphical Python tool for backups and system management on Arch Linux. 
+Backup Helper is a graphical Python tool for backups and system management under Arch Linux. The idea behind this project is to automatically configure a newly installed Arch Linux system. Many services and all packages you need are installed with the click of a button.
+
+As this is my first project and I am new to programming, I would be very grateful for feedback and suggestions. I'm still learning and please don't expect everything to be perfect. But at least on my system, it runs very fast and smoothly.
 
 ## Features
 
