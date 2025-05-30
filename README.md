@@ -1,0 +1,92 @@
+# Backup Helper
+
+Backup Helper is a graphical Python tool for backups and system management on Arch Linux. 
+
+## Features
+
+- Backup and restore with a modern GUI (PyQt6)
+- Mount and unmount drives with graphical dialogs
+- Package management (pacman/yay) with system operations
+- Samba share support with secure credential storage
+- Advanced configuration options and multi-session support
+- Customizable headers and layouts for different backup types
+- Extensive error handling and user feedback
+
+## Package Installer Usage and Tips
+
+First you can select **System Files** in Package Installer. These files will be copied using `sudo`, for root privilege. If you have System Files selected, Package Installer will copy these first. This allows you to copy files such as `pacman.conf` to `/etc`.
+
+Under **Installer Operations** you can specify how you would like to proceed. Each action is executed one after the other. Uncheck actions to disable them.
+
+### Tips
+
+- It is possible to copy to and from samba shares. Source and/or destination must be saved as follows:
+
+    ```
+    smb://ip/rest of path
+    ```
+
+    **Example:**  
+    ```
+    smb://192.168.0.53/rest of smb share path
+    ```
+
+- **Essential Packages** will be installed using `sudo pacman -S`.
+- **Additional Packages** provides access to the Arch User Repository. Therefore **yay** must and will be installed.
+- You can also define **Specific Packages**. These packages will be installed (using `sudo pacman -S`) only if the corresponding session has been recognized. Both full desktop environments and window managers such as “Hyprland” and others are supported.
+
+## Installation
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/TomKo1987/backup-helper.git
+    cd backup-helper
+    ```
+
+2. **Create a virtual environment and install dependencies:**
+    ```sh
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+
+3. **Run the app:**
+    ```sh
+    python -m backup_helper.app
+    ```
+
+4. **(Optional) Install as a CLI command:**
+    ```sh
+    pip install -e .
+    backup-helper
+    ```
+
+5. **(Optional) Build a standalone binary with PyInstaller:**
+    ```sh
+    pyinstaller --onefile backup_helper/app.py
+    ```
+
+## Requirements
+
+- Linux (tested on Arch Linux, should work on most distributions)
+- Python 3.9+
+- PyQt6, keyring, psutil
+
+## Usage
+
+- Use the GUI to create, restore, and manage backups.
+- Manage system packages and perform system maintenance operations.
+- Easily configure Samba network drives and credentials.
+- Mount and unmount external drives as part of your backup workflow.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions, bug reports, and feature requests are welcome! Please open an issue or a pull request.
+
+## Disclaimer
+
+This software is provided "as is", without warranty of any kind. Always test your backup and restore operations carefully.
