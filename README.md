@@ -68,7 +68,7 @@ Under **Installer Operations** you can specify how you would like to proceed. Ea
 
 3. **Run the app:**
     ```sh
-    python -m backup_helper.app
+    python -m backup_helper
     ```
 
 4. **(Optional) Install as a CLI command:**
@@ -79,7 +79,7 @@ Under **Installer Operations** you can specify how you would like to proceed. Ea
 
 5. **(Optional) Build a standalone binary with PyInstaller:**
     ```sh
-    pyinstaller --onefile backup_helper/app.py
+    pyinstaller --onefile backup_helper.py
     ```
 
 ## Requirements
