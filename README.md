@@ -54,9 +54,9 @@ Under **Installer Operations** you can specify how you would like to proceed. Ea
 ## Installation
 
 1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/TomKo1987/backup-helper.git
-    cd backup-helper
+    ```sh    
+    git clone https://github.com/TomKo1987/Arch-Linux-Backup-Helper
+    cd Arch-Linux-Backup-Helper
     ```
 
 2. **Create a virtual environment and install dependencies:**
